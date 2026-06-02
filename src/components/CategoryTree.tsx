@@ -116,7 +116,7 @@ function Categories() {
         </div>
 
         {selectedCategory && (
-          <div className="w-80 shrink-0">
+          <div className="fixed top-40 right-6 w-80">
             <CategoryDetail category={selectedCategory} />
           </div>
         )}
