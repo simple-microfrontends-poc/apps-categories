@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { fetchCategoryTree, CategoryOut } from "../lib/api";
 
-function CategoryTree({
+export function CategoryTree({
   categories,
   level = 0,
   onSelect,
@@ -46,7 +46,7 @@ function CategoryTree({
   );
 }
 
-function CategoryDetail({ category }: { category: CategoryOut }) {
+export function CategoryDetail({ category }: { category: CategoryOut }) {
   return (
     <div className="bg-white rounded-lg border border-gray-200 p-6">
       <h3 className="text-lg font-bold text-gray-800 mb-2">{category.name}</h3>
